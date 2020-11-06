@@ -5,13 +5,13 @@ function setup() {
   createCanvas(1600, 400);
 
   bullet = createSprite(50, 200, 50, 5);
-
+  
+  thickness = Math.round(random(22, 83));
   wall = createSprite(1150, 200, thickness, height/2);
   wall.shapeColor = color(80, 80, 80);
   
   speed = Math.round(random(55, 90));
   weight = Math.round(random(400, 1500));
-  thickness = Math.round(random(22, 83));
 
   bullet.velocityX = speed;
 }
